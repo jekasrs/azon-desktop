@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.text.Text?>
+<BorderPane prefHeight="800.0" prefWidth="1000.0"
+            style="-fx-background-color: #78a4c2"
+            fx:id="ap"
+            fx:controller="seller.group.azon.controller.Invoice.InvoiceAddController"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <VBox alignment="BASELINE_CENTER" prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <Label  text="Номер накладной" style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField maxWidth="100" prefWidth="100" fx:id="invoice_number_field">
+                    <VBox.margin>
+                        <Insets top="2.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Поставщик" style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <ComboBox prefWidth="100" fx:id="seller_combobox">
+                    <VBox.margin>
+                        <Insets top="2.0" />
+                    </VBox.margin>
+                </ComboBox>
+
+                <Button mnemonicParsing="false" text="Оформить" onAction="#makeOffer" BorderPane.alignment="BOTTOM_LEFT" style="-fx-font-size: 18; -fx-background-color: #1382CEFF; -fx-border-color: white" textFill="#ffffff">
+                    <VBox.margin>
+                        <Insets left="10.0" top="10.0" bottom="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" text="Добавить еще" onAction="#addInvoiceContent" BorderPane.alignment="BOTTOM_LEFT" style="-fx-font-size: 18; -fx-background-color: #1382CEFF; -fx-border-color: white" textFill="#ffffff">
+                    <VBox.margin>
+                        <Insets left="10.0" top="5.0" bottom="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Text style="-fx-padding: 10 0 0 0; -fx-font-size: 16;" fill="#ff817a" fx:id="request_message" text="">
+                    <VBox.margin>
+                        <Insets left="10.0" top="5.0" bottom="5.0" />
+                    </VBox.margin>
+                </Text>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <VBox fx:id="all_purchases_box" alignment="BASELINE_CENTER" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            <children>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

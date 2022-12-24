@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane prefHeight="800.0" prefWidth="1000.0"
+            style="-fx-background-color: #78a4c2"
+            fx:id="ap"
+            fx:controller="seller.group.azon.controller.Seller.OneSellerController"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <VBox alignment="BASELINE_CENTER" prefHeight="300.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <BorderPane.margin>
+                <Insets left="50.0" right="50.0" />
+            </BorderPane.margin>
+            <children>
+                <Label text="Название или ФИО ответственного" style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="name_field" onMouseClicked="#clearHandler">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Телефон" style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="phone_field" onMouseClicked="#clearHandler">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="ИНН" style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="tax_field" onMouseClicked="#clearHandler">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </TextField>
+                <Text style="-fx-padding: 10 0 0 0; -fx-font-size: 16;" fill="#ff817a" fx:id="request_message" text="">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Text>
+                <Button fx:id="button" mnemonicParsing="false" text="" onAction="#buttonAction" style="-fx-font-size: 18; -fx-background-color: #1382CEFF; -fx-border-color: white" textFill="#ffffff">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

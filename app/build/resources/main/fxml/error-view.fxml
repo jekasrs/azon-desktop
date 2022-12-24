@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1000.0"
+            fx:id="ap"
+            style="-fx-background-color: #78a4c2"
+            fx:controller="seller.group.azon.controller.ErrorController"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text strokeType="OUTSIDE" style="-fx-font-size: 17; -fx-text-fill: #002444;" strokeWidth="0.0" text="Внутренняя ошикба. Свяжитесь с администратором. " />
+                <Text strokeType="OUTSIDE" style="-fx-font-size: 17; -fx-text-fill: #002444;" strokeWidth="0.0" text="Номер тел.: 89522795509" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

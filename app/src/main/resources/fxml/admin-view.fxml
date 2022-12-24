@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="800.0" prefWidth="1000.0"
+            xmlns="http://javafx.com/javafx/19"
+            fx:id="ap"
+            fx:controller="seller.group.azon.controller.AdminController"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets top="5.0"/>
+    </padding>
+    <top>
+        <VBox alignment="BASELINE_CENTER" fx:id="top_box" minHeight="30.0">
+            <Text fx:id="work_station" strokeType="OUTSIDE" style="-fx-font-size: 16;" fill="aliceblue" strokeWidth="0.0" text="Рабочий стол администратора" BorderPane.alignment="CENTER" />
+        </VBox>
+    </top>
+    <left>
+        <VBox fx:id="menu_box" alignment="BASELINE_CENTER" maxWidth="110.0" minWidth="90.0" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+            <children>
+                <Text strokeType="OUTSIDE" style="-fx-font-size: 16;" fill="aliceblue" strokeWidth="0.0" text="Меню"/>
+            </children>
+        </VBox>
+    </left>
+</BorderPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="800.0" prefWidth="1000.0"
+            style="-fx-background-color: #78a4c2"
+            fx:id="ap"
+            fx:controller="seller.group.azon.controller.RegistrationController"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1">
+<top>
+    <VBox alignment="TOP_CENTER" prefHeight="64.0" prefWidth="511.0" BorderPane.alignment="CENTER">
+        <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;"  text="Хотите зарегистрировать нового сотрудника в системе?"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Для этого заполните форму ниже и нажмите кнопку 'зарегистрировать'."/>
+            <Text fx:id="on_success" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text=""/>
+        </children>
+    </VBox>
+</top>
+
+<left>
+    <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="0.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+        <children>
+            <Text id="first-text" style="-fx-font-size: 17; -fx-text-fill: #002444;" text="Учетная запись сотрудника"/>
+
+            <Label style="-fx-padding: 20 0 0 0; -fx-font-size: 16; -fx-text-fill: #000000;"  text="Логин:"/>
+            <TextField fx:id="username_field" onMouseClicked="#handleClear"/>
+
+            <Label style="-fx-padding: 20 0 0 0; -fx-font-size: 16; -fx-text-fill: #000000;" text="Пароль:"/>
+            <PasswordField fx:id="password_field" onMouseClicked="#handleClear"/>
+
+        </children>
+        <BorderPane.margin>
+            <Insets left="50.0" />
+        </BorderPane.margin>
+    </VBox>
+</left>
+<right>
+    <VBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+        <children>
+            <Text id="second-text" style="-fx-font-size: 17; -fx-text-fill: #002444;" text="Личные данные сотрудника"/>
+            <Label style="-fx-padding: 20 0 0 0; -fx-font-size: 16; -fx-text-fill: #000000;"  text="ФИО:"/>
+            <TextField fx:id="fio_field" onMouseClicked="#handleClear"/>
+            <Label style="-fx-padding: 20 0 0 0; -fx-font-size: 16; -fx-text-fill: #000000;" text="Тел.:"/>
+            <TextField fx:id="phone_field" onMouseClicked="#handleClear" />
+            <Label style="-fx-padding: 20 0 0 0; -fx-font-size: 16; -fx-text-fill: #000000;"  text="Дата рождения:"/>
+            <DatePicker fx:id="date_birth_field" onMouseClicked="#handleClear"/>
+            <Label style="-fx-padding: 20 0 0 0; -fx-font-size: 16; -fx-text-fill: #000000;" text="Должность.:" />
+            <ComboBox prefWidth="150.0" fx:id="role_box"/>
+        </children>
+        <BorderPane.margin>
+            <Insets right="50.0" />
+        </BorderPane.margin>
+    </VBox>
+</right>
+
+<bottom>
+    <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <children>
+            <Text style="-fx-padding: 10 0 0 0; -fx-font-size: 16;" fill="#ff2600" fx:id="request_message" text=""/>
+            <Button style="-fx-font-size: 18; -fx-background-color: #1382CEFF; -fx-border-color: white" textFill="#ffffff" text="Зарегистрировать" onAction="#handleRegister"/>
+        </children>
+    </VBox>
+</bottom>
+<padding>
+    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+</padding>
+</BorderPane>

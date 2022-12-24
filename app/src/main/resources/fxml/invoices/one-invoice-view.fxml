@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TableView?>
+<BorderPane prefHeight="800.0" prefWidth="1000.0"
+            style="-fx-background-color: #78a4c2"
+            fx:id="ap"
+            fx:controller="seller.group.azon.controller.Invoice.OneInvoiceController"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <VBox alignment="BASELINE_CENTER" prefHeight="300.0" prefWidth="400.0" BorderPane.alignment="CENTER_LEFT">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <Label fx:id="invoice_number_field" text="Номер накладной: " style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="date_field" text="Дата оформления: " style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="name_of_seller_field" text="Поставщик: " style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="phone_of_seller_field" text="Телефон поставщика: " style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="tax_of_seller_field" text="ИНН поставщика: " style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="total_sum_field" text="Итоговая сумма: " style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="manager_fio_field" text="Ответственный: " style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="manager_phone_field" text="Телефон менеджера: " style="-fx-font-size: 16; -fx-text-fill: #000000;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <TableView fx:id="goods_table">
+            <BorderPane.margin>
+                <Insets left="50.0" right="50.0" />
+            </BorderPane.margin>
+        </TableView>
+    </center>
+</BorderPane>
